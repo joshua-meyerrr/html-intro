@@ -31,14 +31,21 @@
 				than the <em>smallest planet</em>, Mercury.
 			</p>
 
-			<!-- List of Planets Section -->
-			<!-- IDEA: Put Plantes on horizontal card bar -->
-			<section>
+			<!-- Planet Section -->
+
+			<!-- 
+				IDEA: 
+				Change planet-list to horizontal card list with icon and name. 
+					- turn around on hover for more information
+					- click to move to section
+			-->
+
+			<section class="planet-list-section">
 				<h2>Planets</h2>
 				<p>List of planets ordered by distance from the sun:</p>
 				<ul class="planet-list">
 					<li><a href="#mercury">Mercury</a></li>
-					<li>Venus</li>
+					<li><a href="#venus">Venus</a></li>
 					<li>Earth</li>
 					<li>Mars</li>
 					<li>Jupiter</li>
@@ -65,7 +72,31 @@
 					<img
 						src="images/mercury.png"
 						alt="picture of the planet mercury"
-						class="mercury"
+						class="mercury planet"
+					/>
+				</div>
+			</section>
+
+			<!-- Venus Section -->
+
+			<section class="planet-section">
+				<h3 id="venus">Venus</h3>
+				<div class="flex">
+					<p>
+						Venus is the second planet from the Sun. It is named
+						after the Roman goddess of love and beauty. As the
+						brightest natural object in Earth's night sky after the
+						Moon, Venus can cast shadows and can be, on rare
+						occasions, visible to the naked eye in broad daylight.
+						Venus lies within Earth's orbit, and so never appears to
+						venture far from the Sun, either setting in the west
+						just after dusk or rising in the east a little while
+						before dawn.
+					</p>
+					<img
+						src="images/venus.png"
+						alt="picture of the planet mercury"
+						class="venus planet"
 					/>
 				</div>
 			</section>
