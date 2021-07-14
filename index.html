@@ -5,16 +5,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Solar System</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
-		<header>
-			<h1><u>Sol System</u></h1>
+		<header class="header flex">
+			<div class="logo">
+				<a
+					href="https://en.wikipedia.org/wiki/Solar_System"
+					target="_blank"
+					><img src="images/solar-system.png" width="50px" alt=""
+				/></a>
+			</div>
+			<h1>Sol System</h1>
 		</header>
 
 		<main>
-			<!-- QUESTION: Should I wrap the content in additionally in a article tag?  -->
-
 			<p>
 				The Solar System is the gravitationally bound system of the Sun
 				and the objects that orbit it, either directly or indirectly. Of
@@ -22,15 +28,15 @@
 				eight planets, with the remainder being smaller objects, the
 				dwarf planets and small Solar System bodies. Of the objects that
 				orbit the Sun indirectly—the natural satellites—two are larger
-				than the smallest planet, Mercury.
+				than the <em>smallest planet</em>, Mercury.
 			</p>
 
 			<!-- List of Planets Section -->
-
+			<!-- IDEA: Put Plantes on horizontal card bar -->
 			<section>
 				<h2>Planets</h2>
 				<p>List of planets ordered by distance from the sun:</p>
-				<ol>
+				<ul class="planet-list">
 					<li><a href="#mercury">Mercury</a></li>
 					<li>Venus</li>
 					<li>Earth</li>
@@ -39,34 +45,39 @@
 					<li>Saturn</li>
 					<li>Uranus</li>
 					<li>Neptune</li>
-				</ol>
+				</ul>
 			</section>
 
 			<!-- Mercury Section -->
 
 			<section>
 				<h3 id="mercury">Mercury</h3>
-				<img
-					src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Mercury_in_true_color.jpg"
-					alt="picture of the planet mercury"
-				/>
-				<p>
-					Mercury (0.4 AU from the Sun) is the closest planet to the
-					Sun and on average, all seven other planets. The smallest
-					planet in the Solar System (0.055 M⊕), Mercury has no
-					natural satellites. Besides impact craters, its only known
-					geological features are lobed ridges or rupes that were
-					probably produced by a period of contraction early in its
-					history.
-				</p>
+				<div class="flex">
+					<p>
+						Mercury (0.4 AU from the Sun) is the closest planet to
+						the Sun and on average, all seven other planets. The
+						smallest planet in the Solar System (0.055 M⊕), Mercury
+						has no natural satellites. Besides impact craters, its
+						only known geological features are lobed ridges or rupes
+						that were probably produced by a period of contraction
+						early in its history.
+					</p>
+					<img
+						src="images/mercury.png"
+						alt="picture of the planet mercury"
+						class="mercury"
+					/>
+				</div>
 			</section>
 
 			<!-- insert other planet sections here  -->
 		</main>
 		<footer>
-			<p>
-				Source of the content
-				<a href="https://en.wikipedia.org/wiki/Solar_System"
+			<p class="source">
+				Source of content:
+				<a
+					href="https://en.wikipedia.org/wiki/Solar_System"
+					target="_blank"
 					>Solar System Wikipedia</a
 				>
 			</p>
